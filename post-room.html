@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Ad</title>
+	<link rel="stylesheet" type="text/css" href="icon/css/font-awesome.css">
+	<link rel="stylesheet" href="a.css">
+
+</head>
+<body>
+<style>
+	.post
+	{
+	
+		height:1100px;
+		width:65%;
+		margin-top: 20px;
+		margin-left:240px;
+		border: 1px solid black;
+		border-radius: 5% 0% 5% 5%;		
+	}
+	.post h1
+	{
+		padding-top: 40px;
+		padding-left: 50px;
+		color: #f1592a;
+	}
+	.post p
+	{
+		padding-top: 15px;
+		padding-left: 50px;
+	}
+	.post h3
+	{
+		padding-top: 40px;
+		padding-left: 50px;
+	}
+	.type
+	{
+		margin-left: 50px;
+		height: 35px;
+		width: 403px;
+	}
+	textarea
+	{
+		resize:none;
+	}
+	input[type="submit"]
+	{
+		height: 45px;
+		width: 161px;
+		margin: 10px;
+		background-color: #f1592a;
+		color: white;
+		margin-top:40px;
+
+	}
+	.browse
+	{
+		margin:10px;
+	}
+</style>
+	
+<section>
+		<div class="d1">
+			<h4>Email:roomonrentindore@gmail.com | Call Us: +918349733298 </h4>
+			<div class="d1a">
+				<h4>Show Your Love</h4>
+				<a href="#"><img src="fb.png" width="25px" height="25px"></a>
+				<a href="#"><img src="wp.png" width="25px" height="25px"></a>
+				<a href="#"><img src="in.png" width="25px" height="25px"></a>
+			</div>
+		
+		</div>
+	
+	<div class="head">
+				<div class="head1"> 
+					<i class="fa fa-home fa-5x" ></i>
+					<a href="RoomOnRent.html"><h3>ROOM RENT <span class="sp1">INDORE</span></h3></a>
+				</div>
+		<nav>
+			<ul class="menu">
+			<li class="dropdown"><a href="#">ROOMS+</a>
+						<ul class="dropdown_menu">
+							<li><a href="#">SINGLE ROOM</a></li>
+							<li><a href="#">SINGLE ROOM WITH KITCHEN</a></li>
+							<li><a href="#">1BHK</a></li>
+							<li><a href="#">2BHK</a></li>
+							<li><a href="#">3BHK</a></li>
+							<li><a href="#">INDEPENDENT ROOMS</a></li>
+						</ul>
+			</li>
+		
+			<li class="dw1"><a href="#">HOSTEL+</a>
+				<ul class="dw1_menu">
+					<li><a href="#">BOYS HOSTEL</a></li>
+					<li><a href="#">GIRLS HOSTEL</a></li>
+				</ul>
+			</li>
+			
+			<li class="dw2"><a href="#">PAYING GUEST+</a>
+				<ul class="dw2_menu">
+					<li><a href="#">BOYS P.G.</a></li>
+					<li><a href="#">GIRLS P.G.</a></li>
+				</ul>
+			</li>
+		
+			<li class="dw3"><a href="ContactUs.html">CONTACT US</a></li>
+			<li class="dw3"><a href="post-room.html">POST FREE AD</a></li>
+			<li class="dw3"><a href="AboutUs.html">ABOUT US</a></li>
+		
+			</ul>
+		</nav>
+	</div>
+	<hr>
+</section>
+
+	
+	
+	
+	
+<form action="addpost.php">
+	<section>
+		<div class="post">
+					<h1>POST YOUR PROPERTY (Upload photos to Get more Response) </h1>
+					<p>
+					you can post about rented rooms, appartments, houses, Girls Hostels, Boys Hostels and Paying Guest also.
+					Please fill all the required fields and try to describe complete  details about your space.
+					you can also upload 4 photos upto 5 MB in size.
+					</p>
+		<form action="addpost.php" method="post" enctype="multipart/form-data">
+	
+					<h3>Select Property Type*</h3>
+						<select class="type" name="value">
+							<option value="s with k">SINGLE ROOM WITH KITCHEN</option>
+							<option value="single room">SINGLE ROOM</option>
+							<option value="1bhk">1BHK</option>
+							<option value="2bhk">2BHK</option>
+							<option value="3bhk">3BHK</option>
+							<option value="independent">INDEPENDENT ROOM</option>
+						</select>
+					<h3>Owner Name (required)*</h3>
+						<input  type="text" class="type" name="name"/>
+					<h3>Location (required)*</h3>
+						<input  class="type "type="text" name="locality">
+					<h3>Rent(required)*</h3>
+						<input  class="type "type="number" name="rent">
+					<h3>Mobile(required)*</h3>
+						<input  class="type "type="number" name="mobile">
+
+							<center><h3>Description(required)*</h3></center>
+						<center><textarea placeholder="Description About Property" name="details" cols="50" rows="5"></textarea></center>
+						
+						<center><h3 style="color:red;">"To get more response ,please upload picture of your property."*</h3></center>
+						 <center><input class="browse" type="file" name="image"></center>
+						 <center><input class="browse" type="file" name="browse image"></center>
+						 <center><input class="browse" type="file" name="browse image"></center>
+						 <center><input class="browse" type="file" name="browse image"></center>
+						<center><input type="submit" name="" value="Post Your Space"></center>
+		</form>
+
+		</div>
+</form>
+	</section>
+	
+
+
+
+
+
+<section>
+	<div class="footer">
+			
+			<div class="f1">
+				<h1> Quick Links</h1>
+					<h5 class="h5"><a href="#">Adverties with us</a></h5>
+					<h5 class="h5"><a href="#">Post your Requirment</a></h5>
+					<h5 class="h5"><a href="post-room.html">Post your Room</a></h5>
+					<h5 class="h5"><a href="#">Blog</a></h5>
+					<h5 class="h5"><a href="PrivacyPolicy.html">Privacy Policy</a></h5>
+			</div>
+			<div class="f2">
+				<h1> Website Link</h1>
+					<h5 class="h5"><a href="#">Peoples Need</a></h5>
+					<h5 class="h5"><a href="ContactUs.html">Contact Us</a></h5>
+					<h5 class="h5"><a href="AboutUs.html">About Us</a></h5>
+					<h5 class="h5"><a href="#">FAQ</a></h5>
+			</div>
+			<div class="f3">
+				<h1> Follow Us</h1>
+					<h5 class="h5"><a href="#">Facebook</a></h5>
+					<h5 class="h5"><a href="#">Twitter</a></h5>
+					<h5 class="h5"><a href="#">Linked In</a></h5>
+					<h5 class="h5"><a href="#">Google+</a></h5>
+					<h5 class="h5"><a href="#">Instagram</a></h5>
+			</div>
+			<div class="f4">
+				<i class="fa fa-home fa-5x" ></i>
+				<h1 class="sp2">INDORE</h1>
+				<p>DescriptionIndore is a city in west-central India. 
+				It’s known for the 7-story Rajwada Palace and the Lal Baag Palace, which date back to Indore’s 19th-century Holkar dynasty.
+				The Holkar rulers are honored by a cluster of tombs and cenotaphs at Chhatri Baag. The night market Sarafa Bazar sells street food. 
+				East is the Indo-Gothic Gandhi Hall and clock tower. The Jain temple Kanch Mandir has a mirrored mosaic interior.
+				</p>
+				<a href ="#"input type="Email">Email:roomrentindore@gmail.com</a>
+			</div>
+			<div class="last">
+			<p>Copyright © 2019-2020 Room Rent Indore. All Rights Reserved.</p>
+			</div>
+	</div>
+</section>
+
+</body>	
+</html>
